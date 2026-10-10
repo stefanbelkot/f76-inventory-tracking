@@ -1,0 +1,33 @@
+/*
+ * Colour tokens. `color-scheme` follows the browser unless the page sets data-theme="light" or "dark";
+ * light-dark() then picks the matching value of each token.
+ */
+:root {
+  color-scheme: light dark;
+
+  --bg: light-dark(#f4f5f7, #15171a);
+  --surface: light-dark(#ffffff, #1e2125);
+  --surface-alt: light-dark(#eceef1, #272b30);
+  --border: light-dark(#d3d7dd, #353a41);
+  --text: light-dark(#1b1f24, #e6e8eb);
+  --text-muted: light-dark(#5c6670, #9aa3ad);
+  --accent: light-dark(#1f7a4d, #4cc38a);
+  --accent-text: light-dark(#ffffff, #0d1f17);
+  --accent-soft: light-dark(#dff2e8, #1d3a2c);
+  --warning: light-dark(#9a5b00, #f0b54d);
+  --warning-soft: light-dark(#fff1d6, #3b2f14);
+  --danger: light-dark(#b3261e, #ff8a80);
+  --danger-soft: light-dark(#fde4e1, #402220);
+  --legendary: light-dark(#a35f00, #ffb347);
+  --highlight: light-dark(#fff0a8, #5a4b00);
+  --focus: light-dark(#1f6feb, #6ea8fe);
+  --shadow: light-dark(0 4px 16px rgb(0 0 0 / 12%), 0 4px 16px rgb(0 0 0 / 50%));
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}

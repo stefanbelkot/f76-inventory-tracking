@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    The Syncer: a tray application that uploads the mod's export files into a session of the hosted viewer.
+    Publish one self-contained file with the command in the repository README (dotnet publish, win-x64, self-contained, PublishSingleFile).
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>InventoryTrackingSyncer</AssemblyName>
+    <RootNamespace>InventoryTracking.Syncer</RootNamespace>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Product>Inventory Tracking Syncer</Product>
+    <Description>Uploads the Fallout 76 Inventory Tracking export files to your session on the hosted viewer.</Description>
+    <Company>Inventory Tracking (hobby project)</Company>
+    <Copyright>Open-source hobby project</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\inventorytracking-ui\src\InventoryTracking.Core\InventoryTracking.Core.csproj" />
+    <InternalsVisibleTo Include="InventoryTracking.Syncer.Tests" />
+  </ItemGroup>
+
+</Project>

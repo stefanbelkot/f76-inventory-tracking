@@ -1,0 +1,20 @@
+{
+"v":1,
+"tool":"InventoryTracking",
+"account":"test.account",
+"character":"Tester",
+"storage":"ammo",
+"storageMode":8,
+"title":"AMMO STORAGE BOX",
+"snapshot":"e71e56f1",
+"rows":33,
+"part":1,
+"parts":1,
+"rowsInPart":33,
+"cards":"legendary",
+"cardsOk":0,
+"cardsMissing":0,
+"encoding":"zlib+base64",
+"rawBytes":7365,
+"data":"eNrVmMtu2zAQRff5CoFr1eBbkneJ0SSbFEWMroosGJuxiVJiQklxjaL/XjkPix5l1YIFuDIEWZAOZubey/l+9gs1qtZojmZcZLeub9YoR6vht0NzWgjOcmTWaM4pLiQnlPMcPSvbD0/QHOmn3jwuO9UNlzhHD8Z22qO5FILJHFn9rO3Lja1Wttui+SeSo1r9vH675LTilSxoJXK002az7V7+bfVGN2vl92j+oGyrc9R2yrevr1DPzpvD+95uPfW67Y5Xq+FTNu7wJP6dj2zn3rvdyCWLSgIsERtrhkkMshnDJSybIIc3n+DJFKs243yCVlYUoBVHNJYQmsDZQllzr312oawdCQkhcOTKI6FIqjevVF2rSQVFAfCqIx7BSfFd9jooHHtVkRBN4BEtMVWZioqoQOEEiU0XA03U9cTmKkIgG02SbSYkhCsFx4CNpWgGN6ZtjdUjGIcmJ4JoEkcoaQwwjoeOvPK6UWsNi0eohJAiNiSeRcFc7r1pNoPdnde1Cw2dA0CZ4uQd/ByqCq0wcHJRxHbyGGwL1TSuuT9JKQVnIIeJMaWUkfoyitV9taodUsrC+UBbBIWVC0KK/AvVFBifAL5cv5NF4aKDqny2etV5V6tNozuzGhKn77xZb3SoMIyQU1aJo1fyMBgR8phVYRHBEU+SRMPYwru2vXe77MLZLjwo4AoQ0viFi0K43Lpu0zfZcqtDkeFDzUB2kUlml8u+Na4BGiNB5JT83ySGAIkhocREmTeCp1l6aMoKaKcUKTr6wu9dtjjpRyIZ1BT5H86uUWr3zXZerYbHsg/2fmUpZAlIixQH71YZu1P7bPlofoT2zgTEK+ObQ5RYfW6NbrKLIcQMnwjryAjclskqxVl818/TaXx1g5CuwCnuAq+Vf3SuCXyPAWMvSKLdeWMak33pw9mjoCOLYNOC42iojCygH6zgOWMYeEWRZHR5Px5NTw6CEUjI4y+qY5vh9BxPYMOKFA/xI+JHC9By0qzpbGHO7v4AI57NXg=="
+}

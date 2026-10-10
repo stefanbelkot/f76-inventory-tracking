@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>InventoryTracking.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Types\itemtypes.json" />
+    <InternalsVisibleTo Include="InventoryTracking.Core.Tests" />
+  </ItemGroup>
+
+</Project>

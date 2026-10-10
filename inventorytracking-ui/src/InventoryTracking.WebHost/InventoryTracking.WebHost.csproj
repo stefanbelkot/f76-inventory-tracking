@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!--
+    The web-only build for a Windows IIS server (in-process ASP.NET Core Module): upload sessions, no local folders,
+    no tray, no shutdown. All the logic lives in InventoryTracking.Api; this project only starts it.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>InventoryTrackingWeb</AssemblyName>
+    <RootNamespace>InventoryTracking.WebHost</RootNamespace>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <!-- Session data written by a local test run (dotnet run uses this folder) must never be published to a server. -->
+  <ItemGroup>
+    <Content Remove="session-data\**;sessions\**" />
+    <None Remove="session-data\**;sessions\**" />
+    <Compile Remove="session-data\**;sessions\**" />
+    <EmbeddedResource Remove="session-data\**;sessions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InventoryTracking.Api\InventoryTracking.Api.csproj" />
+    <ProjectReference Include="..\InventoryTracking.Core\InventoryTracking.Core.csproj" />
+  </ItemGroup>
+
+</Project>

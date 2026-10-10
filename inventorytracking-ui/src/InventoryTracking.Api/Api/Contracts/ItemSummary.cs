@@ -1,0 +1,63 @@
+using InventoryTracking.Core.Model;
+
+namespace InventoryTracking.Server.Api.Contracts;
+
+/// <summary>An item as shown in the table: every field except the effect text, which only the details view carries.</summary>
+public sealed record ItemSummary(
+    string Key,
+    string GroupId,
+    string Character,
+    string Storage,
+    string Name,
+    long Count,
+    long Id,
+    long Value,
+    long TotalValue,
+    int EquipState,
+    bool Equipped,
+    long Filter,
+    IReadOnlyList<string> Types,
+    int Level,
+    double Health,
+    double MaxHealth,
+    double Weight,
+    double TotalWeight,
+    bool Legendary,
+    int Stars,
+    bool Favorite,
+    bool Quest,
+    string? Card,
+    int? LegendaryMods,
+    bool Vendor,
+    long? Price,
+    int? Machine)
+{
+    public static ItemSummary From(Item item) => new(
+        item.Key,
+        item.GroupId,
+        item.Character,
+        item.Storage,
+        item.Name,
+        item.Count,
+        item.Id,
+        item.Value,
+        item.TotalValue,
+        item.EquipState,
+        item.Equipped,
+        item.Filter,
+        item.Types,
+        item.Level,
+        item.Health,
+        item.MaxHealth,
+        item.Weight,
+        item.TotalWeight,
+        item.Legendary,
+        item.Stars,
+        item.Favorite,
+        item.Quest,
+        item.Card,
+        item.LegendaryMods,
+        item.Vendor,
+        item.Price,
+        item.Vending?.Machine);
+}

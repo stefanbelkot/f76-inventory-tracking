@@ -1,0 +1,10 @@
+﻿bin/
+obj/
+node_modules/
+web/dist/
+publish/
+*.user
+.vs/
+# upload sessions written by local runs of the web host
+/src/InventoryTracking.WebHost/sessions/
+/src/InventoryTracking.WebHost/session-data/

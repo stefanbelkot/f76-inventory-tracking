@@ -1,0 +1,15 @@
+# Third-party / game files: extract them locally, see exporter/vanilla/README.md and inventomaticstash-mod/README.md
+/exporter/vanilla/*
+!/exporter/vanilla/README.md
+/inventomaticstash-mod/*
+!/inventomaticstash-mod/README.md
+
+# Build output (contains modified copies of the game's menu)
+/exporter/build/
+
+# Local working files
+/handoverfiles/
+bin/
+obj/
+node_modules/
+publish/

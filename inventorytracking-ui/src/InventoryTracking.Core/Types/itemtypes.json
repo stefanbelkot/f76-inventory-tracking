@@ -1,0 +1,13 @@
+[
+  { "id": "weapon", "name": "Weapon", "bits": [4] },
+  { "id": "armor", "name": "Armor", "bits": [8] },
+  { "id": "apparel", "name": "Apparel", "bits": [16] },
+  { "id": "food", "name": "Food and water", "bits": [32] },
+  { "id": "aid", "name": "Aid", "bits": [64] },
+  { "id": "notes", "name": "Notes", "bits": [1024, 2048] },
+  { "id": "misc", "name": "Misc", "bits": [4096, 8192] },
+  { "id": "junk", "name": "Junk", "bits": [16384, 262144] },
+  { "id": "mods", "name": "Mods", "bits": [32768] },
+  { "id": "ammo", "name": "Ammo", "bits": [65536] },
+  { "id": "holotapes", "name": "Holotapes", "bits": [131072] }
+]
