@@ -5,6 +5,10 @@ export const GUIDE_FACTS = {
   game: '1.7.26.22',
   xscal: '0.2.20',
   inventomatic: '2.85',
+  /** Who runs the site and how to reach them; add `email` here when a public address exists (the privacy section shows it when set). */
+  owner: 'Stefan Belkot',
+  repoUrl: 'https://github.com/stefanbelkot/f76-inventory-tracking',
+  email: '',
 }
 
 export interface GuideSection {
@@ -23,6 +27,7 @@ export const GUIDE_SECTIONS: GuideSection[] = [
   { id: 'viewer', title: 'Using the viewer' },
   { id: 'help', title: 'Troubleshooting' },
   { id: 'downloads', title: 'Downloads' },
+  { id: 'privacy', title: 'About, contact and privacy' },
 ]
 
 export const SECTION_PREFIX = 'guide'

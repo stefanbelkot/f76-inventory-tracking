@@ -92,7 +92,8 @@ Do not use this together with the other version of InventoryTracking; use exactl
 
 Source and credits
 ------------------
-InventoryTracking is free, MIT-licensed hobby software by Stefan Belkot. Source code and build scripts: https://github.com/stefanbelkot/f76-inventory-tracking The archive contains a modified copy of Fallout 76's own SecureTrade interface menu
+InventoryTracking is free, MIT-licensed hobby software by Stefan Belkot. Source code and build scripts: https://github.com/stefanbelkot/f76-inventory-tracking
+The archive contains a modified copy of Fallout 76's own SecureTrade interface menu
 (the game's menu code belongs to Bethesda Game Studios; it is changed only to add the export buttons){credit}
 Not affiliated with or endorsed by Bethesda. Fallout 76 is a trademark of Bethesda Softworks / ZeniMax Media.
 """
@@ -132,7 +133,7 @@ def main():
     fill = dict(version=version, xscal=XSCAL, game=GAME)
     add('mod-standalone', 'Mod: standalone', f'InventoryTracking-{version}-standalone.zip',
         [('InventoryTracking.ba2', standalone),
-         ('INSTALL.txt', INSTALL.format(title='standalone', extra='\nFor players WITHOUT InventOmaticStash-UO.\n', inv='', **fill))],
+         ('INSTALL.txt', INSTALL.format(title='standalone', extra='\nFor players WITHOUT InventOmaticStash-UO.\n', inv='', credit='.\n', **fill))],
         version,
         'For players without InventOmaticStash-UO. Same export code as the compatible build; the menu variant itself is not yet confirmed in game.',
         {'game': GAME, 'xscal': XSCAL})

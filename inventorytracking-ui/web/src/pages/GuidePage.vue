@@ -281,6 +281,60 @@ sResourceArchive2List=SomeOther.ba2,InventOmaticStash-UO.ba2,InventoryTracking.b
         </p>
         <DownloadsTable />
       </section>
+
+      <section :id="sectionAnchor('privacy')">
+        <h3>About, contact and privacy</h3>
+        <p>
+          This is a free, non-commercial hobby project by {{ facts.owner }}. It is not affiliated with or endorsed by Bethesda Game
+          Studios or ZeniMax Media; Fallout 76 is their trademark. The source code is open (MIT license).
+        </p>
+        <h4>Contact</h4>
+        <p>
+          Questions, bug reports and requests (including requests about your data, see below):
+          <a :href="`${facts.repoUrl}/issues`" target="_blank" rel="noopener">open an issue on GitHub</a>
+          or find {{ facts.owner }} through the
+          <a :href="facts.repoUrl" target="_blank" rel="noopener">repository page</a>.
+          <template v-if="facts.email">E-mail: <a :href="`mailto:${facts.email}`">{{ facts.email }}</a>.</template>
+          Issues are public, so do not post your session link there.
+        </p>
+        <h4>Privacy</h4>
+        <p>The person responsible for this site is {{ facts.owner }} (contact above). What happens with your data:</p>
+        <ul>
+          <li>
+            <strong>Uploads (hosted site only):</strong> when you use the Syncer or the Import tab, the export files you upload are stored on
+            the server. They contain item lists and the <strong>account and character names</strong> of your game profile. They are used only to show you
+            your own data in the viewer.
+          </li>
+          <li>
+            <strong>Session link:</strong> a random id is the only key to an upload session; there are no user accounts, passwords or tracking.
+            Anyone who has your link can see that session's data, so share it only on purpose.
+          </li>
+          <li>
+            <strong>Retention:</strong> a session and its files are deleted automatically one week after its last use. You can stop earlier by
+            asking for deletion (see below).
+          </li>
+          <li>
+            <strong>Browser storage:</strong> the page keeps your session id and display settings (filters, calculator, last view) in your browser's
+            local storage so that it works when you come back. There are no cookies, no analytics and no advertising.
+          </li>
+          <li>
+            <strong>Server logs:</strong> the web server records normal access logs (time, requested address, IP address, browser type) for
+            security and operation. They are not combined with uploaded data and are not shared.
+          </li>
+          <li>
+            <strong>Sharing:</strong> data is not sold or passed on. It is stored on the server that hosts this site, which is run by its owner.
+          </li>
+          <li>
+            <strong>Local viewer and Syncer settings:</strong> the desktop viewer and the Syncer keep their data on your own computer (the Syncer
+            only talks to the site address you configured).
+          </li>
+        </ul>
+        <p>
+          <strong>Your rights:</strong> under the GDPR you can ask for access to, correction or deletion of the data stored about you, and you
+          can complain to the data protection authority (in Sweden: IMY, Integritetsskyddsmyndigheten). To have a session deleted early, contact
+          {{ facts.owner }} and name the session id (the part of your session link after <code>session=</code>) or the account name.
+        </p>
+      </section>
     </article>
   </main>
 </template>
